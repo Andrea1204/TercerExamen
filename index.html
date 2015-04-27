@@ -19,7 +19,7 @@
             var descripcion=$("#descripcion").val();
             $.ajax({
             type:"POST",
-            url:"guardarDatos.php",
+            url:"http://andrea92.260mb.net/guardarDatos.php",
             data:"tipo="+tip+"&numero="+num+"&precio="+precio+"&color="+color+"&marca="+marca+"&descripcion="+descripcion,
             success: registro
         });
@@ -38,7 +38,7 @@
             var descripcion=$("#descripcion1").val();
             $.ajax({
             type:"POST",
-            url:"guardarDatos1.php",
+            url:"http://andrea92.260mb.net/guardarDatos1.php",
             data:"tipo="+tip+"&numero="+num+"&precio="+precio+"&color="+color+"&marca="+marca+"&descripcion="+descripcion,
             success: registro1
         });
@@ -53,7 +53,7 @@
             btnConsulta1.click(function cons1(){
                 $.ajax({
                     type:"POST",
-                    url:"consulta1.php",
+                    url:"http://andrea92.260mb.net/consulta1.php",
                     data:"",
                     success: consultaDatos1
                 });
@@ -85,7 +85,7 @@
             btnConsulta.click(function cons(){
                 $.ajax({
                     type:"POST",
-                    url:"consulta.php",
+                    url:"http://andrea92.260mb.net/consulta.php",
                     data:"",
                     success: consultaDatos
                 });
@@ -118,7 +118,7 @@
                 var valConsulta=$("#valConsulta").val();
                 $.ajax({
                     type:"POST",
-                    url:"consultaBD2.php",
+                    url:"http://andrea92.260mb.net/consultaBD2.php",
                     data:"Id="+valConsulta,
                     success: consultaProducto
                 })
@@ -136,7 +136,7 @@
                 var valConsulta1=$("#valConsulta1").val();
                 $.ajax({
                     type:"POST",
-                    url:"consultaBD21.php",
+                    url:"http://andrea92.260mb.net/consultaBD21.php",
                     data:"Id="+valConsulta1,
                     success: consultaProducto1
                 })
@@ -153,7 +153,7 @@
             btnConAct.click(function cargarDat(){
                 $.ajax({
                     type:"POST",
-                    url:"consulta.php",
+                    url:"http://andrea92.260mb.net/consulta.php",
                     data:"",
                     success: cargarDatos
                 });
@@ -169,7 +169,7 @@
             var Id=parseInt($("#nomActualizar").val());
             $.ajax({
                 type:"POST",
-                url:"consultaBD2.php",
+                url:"http://andrea92.260mb.net/consultaBD2.php",
                 data:"Id="+Id,
                 success: cargarDatosAct
             });
@@ -219,7 +219,7 @@
                 else{
                     $.ajax({
                         type:"POST",
-                        url:"actualizar.php",
+                        url:"http://andrea92.260mb.net/actualizar.php",
                         data:"id="+id+"&tipo="+tipo+"&numero="+numero+"&precio="+precio+"&color="+color+"&marca="+marca+"&descripcion="+descripcion,
                         success:actualizacion
                     });
@@ -234,7 +234,7 @@
             btnConAct1.click(function cargarDat1(){
                 $.ajax({
                     type:"POST",
-                    url:"consulta1.php",
+                    url:"http://andrea92.260mb.net/consulta1.php",
                     data:"",
                     success: cargarDatos1
                 });
@@ -250,7 +250,7 @@
             var Id=parseInt($("#nomActualizar1").val());
             $.ajax({
                 type:"POST",
-                url:"consultaBD21.php",
+                url:"http://andrea92.260mb.net/consultaBD21.php",
                 data:"Id="+Id,
                 success: cargarDatosAct1
             });
@@ -300,7 +300,7 @@
                 else{
                     $.ajax({
                         type:"POST",
-                        url:"actualizar1.php",
+                        url:"http://andrea92.260mb.net/actualizar1.php",
                         data:"id="+id+"&tipo="+tipo+"&numero="+numero+"&precio="+precio+"&color="+color+"&marca="+marca+"&descripcion="+descripcion,
                         success:actualizacion1
                     });
@@ -316,7 +316,7 @@
                 btnConsEliminar.click(function conEliminar(){                    
                     $.ajax({
                         type:"POST",
-                        url:"consulta.php",
+                        url:"http://andrea92.260mb.net/consulta.php",
                         data:"",
                         success:consultaAntEliminar
                         
@@ -333,7 +333,7 @@
                     var idEliminar=parseInt($("#idEliminar").val());
                     $.ajax({
                         type:"POST",
-                        url:"eliminar.php",
+                        url:"http://andrea92.260mb.net/eliminar.php",
                         data:"Id="+idEliminar,
                         success:Eliminacion
                     });
@@ -349,7 +349,7 @@
                 btnConsEliminar1.click(function conEliminar1(){                    
                     $.ajax({
                         type:"POST",
-                        url:"consulta1.php",
+                        url:"http://andrea92.260mb.net/consulta1.php",
                         data:"",
                         success:consultaAntEliminar1
                         
@@ -366,7 +366,7 @@
                     var idEliminar1=parseInt($("#idEliminar1").val());
                     $.ajax({
                         type:"POST",
-                        url:"eliminar1.php",
+                        url:"http://andrea92.260mb.net/eliminar1.php",
                         data:"Id="+idEliminar1,
                         success:Eliminacion1
                     });
